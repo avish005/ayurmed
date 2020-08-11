@@ -4143,6 +4143,27 @@ ul.htc__instagram__posts.owl-carousel li img {
         width: 100%;
         overflow-x: auto;
     }
+    .desktop-view {
+        display: none !important;
+    }
+    .mobile-view {
+        display: block !important;
+    }
+    .mobile-view a {
+        text-decoration: underline;
+        text-transform: capitalize;
+    }
+    .mobile-view input {
+        max-width: 50px;
+    }
+}
+
+.mobile-view {
+    display: none;
+}
+
+.desktop-view {
+    display: block;
 }
 
 .badge-info {
@@ -4168,7 +4189,8 @@ ul.htc__instagram__posts.owl-carousel li img {
 
 .old__prize::before,
 .dp::before,
-.saving::before {
+.saving::before,
+.product-subtotal::before {
     content: "\20B9";
 }
 
@@ -4202,8 +4224,21 @@ ul.htc__instagram__posts.owl-carousel li img {
     border-radius: 3px;
 }
 
+.product_img {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
+
+.product_img img {
+    margin: 0 auto;
+    margin-left: 50px;
+}
+
 .empty_cart {
     padding: 10%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
     margin-bottom: 100px;
+}
+
+#product_details {
+    margin: 50px 0px 50px 50px;
 }
