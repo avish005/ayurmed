@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*-----------------------------------------------------------------------------------
 
   Template Name: Asbab eCommerce HTML5 Template.
@@ -7,4 +8,15 @@
 
 @import url("header.css");
 @import url("slider.css");
+=======
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Asbab eCommerce HTML5 Template.
+  Description: Asbab is a unique website template designed in HTML with a simple & beautiful look.
+
+-------------------------------------------------------------------------------------*/
+
+@import url("header.css");
+@import url("slider.css");
+>>>>>>> 5dfc8f7afc964f8be7e0442e66ece4b42ca722ed
 @import url("footer.css");
