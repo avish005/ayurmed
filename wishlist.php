@@ -37,7 +37,7 @@ $res=mysqli_query($con,"select product.name,product.image,product.price,product.
                     while($row=mysqli_fetch_assoc($res)){
                 ?>
                 <div class="row">
-                   <div class="col-lg-3 md-2 sm-2 product_img">
+                   <div class="col-lg-3 col-md-2 col-sm-2 product_img">
                         <img src="<?php echo PRODUCT_IMAGE_SITE_PATH.$row['image']?>" style="max-width: 200px;"/>
                    </div>
                    <div class="col-lg-5" id="product_details">
