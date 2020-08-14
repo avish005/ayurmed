@@ -36,11 +36,13 @@ if(isset($_POST['update_order_status'])){
 									$res=mysqli_query($con,"select distinct(order_detail.id) ,order_detail.*,product.name,product.image,`order`.address,`order`.city,`order`.pincode from order_detail,product ,`order` where order_detail.order_id='$order_id' and  order_detail.product_id=product.id GROUP by order_detail.id");
 									$total_price=0;
 									
-									$userInfo=mysqli_fetch_assoc(mysqli_query($con,"select * from `order` where id='$order_id'"));
+									$userInfo=mysqli_fetch_assoc(mysqli_query($con,"select `order`.* , users.name, users.email, users.mobile from `order`, users where `order`.id='$order_id'"));
 									
-									$address=$userInfo['address'];
-									$city=$userInfo['city'];
-									$pincode=$userInfo['pincode'];
+									$name = $userInfo['name'];
+									$address = $userInfo['address'];
+									$city = $userInfo['city'];
+									$pincode = $userInfo['pincode'];
+									$mobile = $userInfo['mobile'];
 									
 									while($row=mysqli_fetch_assoc($res)){
 									
@@ -65,8 +67,9 @@ if(isset($_POST['update_order_status'])){
 							
 						</table>
 						<div id="address_details">
-							<strong>Address</strong>
-							<?php echo $address?>, <?php echo $city?>, <?php echo $pincode?><br/><br/>
+							<strong>Address : </strong>
+							<?php echo $name?>,<br>
+							<?php echo $address?>, <?php echo 'City - '.$city?>,<br> <?php echo 'Pincode - '.$pincode?><br/><?php echo 'Mobile - '.$mobile?><br/>
 							<strong>Order Status</strong>
 							<?php 
 							$order_status_arr=mysqli_fetch_assoc(mysqli_query($con,"select order_status.name from order_status,`order` where `order`.id='$order_id' and `order`.order_status=order_status.id"));
