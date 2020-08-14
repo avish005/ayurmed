@@ -4156,6 +4156,14 @@ ul.htc__instagram__posts.owl-carousel li img {
     .mobile-view input {
         max-width: 50px;
     }
+    .service-icon {
+        font-size: 60px;
+        border-radius: 45px;
+        color: #03a9f4;
+        margin: 5% 35% !important;
+        padding: 10px;
+        z-index: 1;
+    }
 }
 
 .mobile-view {
@@ -4241,4 +4249,37 @@ ul.htc__instagram__posts.owl-carousel li img {
 
 #product_details {
     margin: 50px 0px 50px 50px;
+}
+
+.service-icon {
+    font-size: 60px;
+    border-radius: 45px;
+    color: #03a9f4;
+    margin: 5% 35% !important;
+    padding: 10px;
+}
+
+.card-body {
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    height: 200px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.services {
+    margin-left: 5%;
+    margin-top: -200px;
+}
+
+.pro__info {
+    font-size: 18px !important;
+    font-family: 'Roboto', sans-serif;
+    word-spacing: 10px;
+    line-height: 35px !important;
 }

@@ -67,6 +67,7 @@ if(isset($_POST['submit'])){
 		}
 	}
 	
+	
 	if(isset($_GET['id']) && $_GET['id']==0){
 		if($_FILES['image']['type']!='image/png' && $_FILES['image']['type']!='image/jpg' && $_FILES['image']['type']!='image/jpeg'){
 			$msg="Please select only png,jpg and jpeg image formate";
@@ -168,12 +169,12 @@ if(isset($_POST['submit'])){
 								
 								<div class="form-group">
 									<label for="categories" class=" form-control-label">Short Description</label>
-									<textarea name="short_desc" placeholder="Enter product short description" class="form-control" required><?php echo $short_desc?></textarea>
+									<textarea name="short_desc" rows="12" placeholder="Enter product short description" class="form-control" required><?php echo $short_desc?></textarea>
 								</div>
 								
 								<div class="form-group">
 									<label for="categories" class=" form-control-label">Description</label>
-									<textarea name="description" placeholder="Enter product description" class="form-control" required><?php echo $description?></textarea>
+									<textarea name="description" placeholder="Enter product description" class="form-control" ><?php echo $description?></textarea>
 								</div>
 								
 								<div class="form-group">
