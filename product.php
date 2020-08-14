@@ -69,7 +69,7 @@ if(isset($_GET['id'])){
                                     <li class="dp"><?php echo $get_product['0']['price']?></li>
                                 </ul>
                                 <p>You Save: <span class="saving"> <?php echo $get_product['0']['mrp'] - $get_product['0']['price']?></span></p>
-                                <p class="pro__info"><?php echo $get_product['0']['short_desc']?></p>
+                                <p class="pro__info"><?php echo $get_product['0']['short_desc']; ?></p>
                                 <div class="ht__pro__desc">
                                     <div class="sin__desc">
                                         <?php
@@ -125,35 +125,33 @@ if(isset($_GET['id'])){
             <!-- End Product Details Top -->
         </section>
         <!-- End Product Details Area -->
-		<!-- Start Product Description -->
+        <!-- Start Product Description -->
+        
+        <!-- 
         <section class="htc__produc__decription bg__white">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <!-- Start List And Grid View -->
                         <ul class="pro__details__tab" role="tablist">
                             <li role="presentation" class="description active"><a href="#description" role="tab" data-toggle="tab">description</a></li>
                         </ul>
-                        <!-- End List And Grid View -->
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="ht__pro__details__content">
-                            <!-- Start Single Content -->
                             <div role="tabpanel" id="description" class="pro__single__content tab-pane fade in active">
                                 <div class="pro__tab__content__inner">
                                     <?php echo $get_product['0']['description']?>
                                 </div>
                             </div>
-                            <!-- End Single Content -->
                             
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End Product Description -->
+ -->
         
 										
 <?php require('footer.php')?>        

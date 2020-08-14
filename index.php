@@ -57,6 +57,43 @@
                 <!-- End Single Slide -->
             </div>
         </div>
+
+        <!-- SERVICES  -->
+
+        <section class="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-1 col-md-1"></div>
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-11 category">
+                        <div class="card">
+                            <i class="fa fa-truck service-icon category"></i>
+                            <div class="card-body">
+                                <h3 class="card-title">48 HOURS DELIVERY</h3><br>
+                                <p class="card-text">We provide 48 hours fast delivery throughout Jamshedpur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-11 category">
+                        <div class="card">
+                            <i class="fa fa-ban service-icon category"></i>
+                            <div class="card-body">
+                                <h3 class="card-title">REFUND OR CANCELLATION</h3><br>
+                                <p class="card-text">Cancel or get Refund product at just one call. Click here to see<br><a href="return_refund.php" target="_blank " style="text-decoration: underline ;">Return/Refund Policy</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-11 category">
+                        <div class="card">
+                            <i class="fa fa-truck service-icon category"></i>
+                            <div class="card-body">
+                                <h3 class="card-title">48 HOURS DELIVERY</h3><br>
+                                <p class="card-text">We provide 48 hours fast delivery <br>throughout Jamshedpur.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
        
         <!-- Start Category Area -->
         <section class="htc__category__area ptb--100">

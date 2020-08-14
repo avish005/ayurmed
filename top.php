@@ -53,6 +53,7 @@ if($mypage=='categories.php'){
 <html class="no-js" lang="en">
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title><?php echo $meta_title?></title>
     <meta name="description" content="<?php echo $meta_desc?>">
@@ -68,6 +69,7 @@ if($mypage=='categories.php'){
     <link rel="stylesheet" href="css/custom.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<script src="js/vendor/modernizr-3.5.0.min.js"></script>
 	<style>
 	.htc__wishlist,.htc__qua {
