@@ -77,6 +77,7 @@ if(isset($_POST['update_order_status'])){
 							?>
 							
 							<div>
+								<!-- ORDER STATUS -->
 								<form method="post">
 									<select class="form-control" name="update_order_status" required>
 										<option value="">Select Status</option>
