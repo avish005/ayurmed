@@ -8,9 +8,11 @@ if(!isset($_SESSION['USER_LOGIN'])){
 	</script>
 	<?php
 }
-$name=get_safe_value($con,$_POST['name']);
+$name = get_safe_value($con,$_POST['name']);
+$mobile = get_safe_value($con,$_POST['mobile']);
 $uid=$_SESSION['USER_ID'];
-mysqli_query($con,"update users set name='$name' where id='$uid'");
+mysqli_query($con,"update users set name='$name', mobile = '$mobile' where id='$uid'");
 $_SESSION['USER_NAME']=$name;
-echo "Your name updated";
+$_SESSION['USER_MOBILE']=$mobile;
+echo "Profile updated";
 ?>

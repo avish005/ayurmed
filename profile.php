@@ -44,6 +44,12 @@ if(!isset($_SESSION['USER_LOGIN'])){
 									<div class="single-contact-form">
 										<div class="contact-box name">
 											<input type="text" name="name" id="name" placeholder="Your Name*" style="width:100%" value="<?php echo $_SESSION['USER_NAME']?>">
+										</div><br>
+										<div class="contact-box name">
+											<input type="text" name="email" id="email" style="width:100%;" value="<?php echo $_SESSION['USER_EMAIL']?>"disabled>
+										</div><br>
+										<div class="contact-box name">
+											<input type="text" name="mobile" id="mobile" style="width:100%" minlength="10" maxlength="10" value="<?php echo $_SESSION['USER_MOBILE']?>" >
 										</div>
 										<span class="field_error" id="name_error"></span>
 									</div>
@@ -112,60 +118,66 @@ if(!isset($_SESSION['USER_LOGIN'])){
         </section>
 		<script>
 		function update_profile(){
-			jQuery('.field_error').html('');
-			var name=jQuery('#name').val();
+			$('.field_error').html('');
+			var name = $('#name').val();
+			var mobile = $('#mobile').val();
 			if(name==''){
-				jQuery('#name_error').html('Please enter your name');
+				$('#name_error').html('Please enter your name');
+			}else if(mobile == ''){
+				$('#name_error').html('Please enter your Mobile Number');
 			}else{
-				jQuery('#btn_submit').html('Please wait...');
-				jQuery('#btn_submit').attr('disabled',true);
-				jQuery.ajax({
+				$('#btn_submit').html('Please wait...');
+				$('#btn_submit').attr('disabled',true);
+				$.ajax({
 					url:'update_profile.php',
 					type:'post',
-					data:'name='+name,
+					data: {
+						name : name,
+						mobile : mobile
+					},
 					success:function(result){
-						jQuery('#name_error').html(result);
-						jQuery('#btn_submit').html('Update');
-						jQuery('#btn_submit').attr('disabled',false);
+						$('#name_error').html(result);
+						$('#btn_submit').html('Update');
+						$('#btn_submit').attr('disabled',false);
 					}
 				})
 			}
 		}
 		
 		function update_password(){
-			jQuery('.field_error').html('');
-			var current_password=jQuery('#current_password').val();
-			var new_password=jQuery('#new_password').val();
-			var confirm_new_password=jQuery('#confirm_new_password').val();
+			$('.field_error').html('');
+			var current_password=$('#current_password').val();
+			var new_password=$('#new_password').val();
+			var confirm_new_password=$('#confirm_new_password').val();
 			var is_error='';
 			if(current_password==''){
-				jQuery('#current_password_error').html('Please enter password');
+				$('#current_password_error').html('Please enter password');
 				is_error='yes';
 			}if(new_password==''){
-				jQuery('#new_password_error').html('Please enter password');
+				$('#new_password_error').html('Please enter password');
 				is_error='yes';
 			}if(confirm_new_password==''){
-				jQuery('#confirm_new_password_error').html('Please enter password');
+				$('#confirm_new_password_error').html('Please enter password');
 				is_error='yes';
 			}
 			
 			if(new_password!='' && confirm_new_password!='' && new_password!=confirm_new_password){
-				jQuery('#confirm_new_password_error').html('Please enter same password');
+				$('#confirm_new_password_error').html('Please enter same password');
 				is_error='yes';
 			}
 			
 			if(is_error==''){
-				jQuery('#btn_update_password').html('Please wait...');
-				jQuery('#btn_update_password').attr('disabled',true);
-				jQuery.ajax({
+				$('#btn_update_password').html('Please wait...');
+				$('#btn_update_password').attr('disabled',true);
+				$.ajax({
 					url:'update_password.php',
 					type:'post',
 					data:'current_password='+current_password+'&new_password='+new_password,
 					success:function(result){
-						jQuery('#current_password_error').html(result);
-						jQuery('#btn_update_password').html('Update');
-						jQuery('#btn_update_password').attr('disabled',false);
-						jQuery('#frmPassword')[0].reset();
+						$('#current_password_error').html(result);
+						$('#btn_update_password').html('Update');
+						$('#btn_update_password').attr('disabled',false);
+						$('#frmPassword')[0].reset();
 					}
 				})
 			}
