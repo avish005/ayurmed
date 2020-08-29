@@ -4164,6 +4164,12 @@ ul.htc__instagram__posts.owl-carousel li img {
         padding: 10px;
         z-index: 1;
     }
+    .slider__fixed--height {
+        height: 350px !important;
+    }
+    .slider__inner h2 {
+        display: none !important;
+    }
 }
 
 .mobile-view {
@@ -4281,7 +4287,7 @@ ul.htc__instagram__posts.owl-carousel li img {
 
 .services {
     margin-left: 5%;
-    margin-top: -200px;
+    margin-top: -100px;
 }
 
 .pro__info {

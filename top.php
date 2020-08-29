@@ -70,7 +70,8 @@ if($mypage=='categories.php'){
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-	<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 	<style>
 	.htc__wishlist,.htc__qua {
 		background: #03a9f4 ;

@@ -11,20 +11,19 @@
                 <div class="single__slide animation__style01 slider__fixed--height">
                     <div class="container">
                         <div class="row align-items__center">
-                            <div class="col-md-7 col-sm-7 col-xs-12 col-lg-6">
+                            <div class="col-md-7 col-sm-7 col-xs-12 col-lg-4">
                                 <div class="slide">
                                     <div class="slider__inner">
-                                        <h2>collection 2018</h2>
-                                        <h1>NICE CHAIR</h1>
+                                        <h1 style="font-size:50px;">Herbal Face Pack</h1>
                                         <div class="cr__btn">
-                                            <a href="cart.html">Shop Now</a>
+                                            <a href="product.php?id=6">Shop Now</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-sm-5 col-xs-12 col-md-5">
+                            <div class="col-lg-7 col-sm-5 col-xs-12 col-md-5">
                                 <div class="slide__thumb">
-                                    <img src="images/slider/fornt-img/1.png" alt="slider images">
+                                    <img src="images/slider/fornt-img/1.jfif" alt="slider images">
                                 </div>
                             </div>
                         </div>
@@ -35,20 +34,65 @@
                 <div class="single__slide animation__style01 slider__fixed--height">
                     <div class="container">
                         <div class="row align-items__center">
-                            <div class="col-md-7 col-sm-7 col-xs-12 col-lg-6">
+                            <div class="col-md-7 col-sm-7 col-xs-12 col-lg-4">
                                 <div class="slide">
                                     <div class="slider__inner">
-                                        <h2>collection 2018</h2>
-                                        <h1>NICE CHAIR</h1>
+                                        <h1 style="font-size:50px;">Fevodoc</h1>
                                         <div class="cr__btn">
-                                            <a href="cart.html">Shop Now</a>
+                                            <a href="product.php?id=49">Shop Now</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-sm-5 col-xs-12 col-md-5">
+                            <div class="col-lg-7 col-sm-5 col-xs-12 col-md-5">
                                 <div class="slide__thumb">
-                                    <img src="images/slider/fornt-img/2.png" alt="slider images">
+                                    <img src="images/slider/fornt-img/4.jfif" alt="slider images">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Slide -->
+                <!-- Start Single Slide -->
+                <div class="single__slide animation__style01 slider__fixed--height">
+                    <div class="container">
+                        <div class="row align-items__center">
+                            <div class="col-md-7 col-sm-7 col-xs-12 col-lg-4">
+                                <div class="slide">
+                                    <div class="slider__inner">
+                                        <h1 style="font-size:50px;">Aloevera Cucumber Cream</h1>
+                                        <div class="cr__btn">
+                                            <a href="product.php?id=9">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-sm-5 col-xs-12 col-md-5">
+                                <div class="slide__thumb">
+                                    <img src="images/slider/fornt-img/2.jfif" alt="slider images">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Slide -->
+                <!-- Start Single Slide -->
+                <div class="single__slide animation__style01 slider__fixed--height">
+                    <div class="container">
+                        <div class="row align-items__center">
+                            <div class="col-md-7 col-sm-7 col-xs-12 col-lg-4">
+                                <div class="slide">
+                                    <div class="slider__inner">
+                                         <h1 style="font-size:50px;">Cardiodoc Ras</h1>
+                                         <div class="cr__btn">
+                                            <a href="product.php?id=51">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-sm-5 col-xs-12 col-md-5">
+                                <div class="slide__thumb">
+                                    <img src="images/slider/fornt-img/3.jfif" alt="slider images">
                                 </div>
                             </div>
                         </div>

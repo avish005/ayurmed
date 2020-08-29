@@ -15,7 +15,7 @@ if(!isset($_SESSION['USER_LOGIN'])){
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="bradcaump__inner">
-                                <nav class="bradcaump-inner">
+                                <nav class="bradcaump-inner animate__animated animate__fadeInDown">
                                   <a class="breadcrumb-item" href="index.php">Home</a>
                                   <span class="brd-separetor"><i class="zmdi zmdi-chevron-right"></i></span>
                                   <span class="breadcrumb-item active">Profile</span>
@@ -46,7 +46,7 @@ if(!isset($_SESSION['USER_LOGIN'])){
 											<input type="text" name="name" id="name" placeholder="Your Name*" style="width:100%" value="<?php echo $_SESSION['USER_NAME']?>">
 										</div><br>
 										<div class="contact-box name">
-											<input type="text" name="email" id="email" style="width:100%;" value="<?php echo $_SESSION['USER_EMAIL']?>"disabled>
+											<input type="text" class="form-control" name="email" id="email" style="width:100%;" value="<?php echo $_SESSION['USER_EMAIL']?>"disabled>
 										</div><br>
 										<div class="contact-box name">
 											<input type="text" name="mobile" id="mobile" style="width:100%" minlength="10" maxlength="10" value="<?php echo $_SESSION['USER_MOBILE']?>" >

@@ -20,7 +20,7 @@ if($str!=''){
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="bradcaump__inner">
-                                <nav class="bradcaump-inner">
+                                <nav class="bradcaump-inner animate__animated animate__fadeInDown">
                                   <a class="breadcrumb-item" href="index.php">Home</a>
                                   <span class="brd-separetor"><i class="zmdi zmdi-chevron-right"></i></span>
                                   <span class="breadcrumb-item active">Search</span>
