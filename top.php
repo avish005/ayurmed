@@ -59,6 +59,7 @@ if($mypage=='categories.php'){
     <meta name="description" content="<?php echo $meta_desc?>">
 	<meta name="keywords" content="<?php echo $meta_keyword?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/logo/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
