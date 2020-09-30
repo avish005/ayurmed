@@ -27,3 +27,8 @@ The project is divided into two parts:-
 11. Can Update the Product Quantities even from the shopping cart section
 12. Receives a mail on registered mail id on placing an order.
 13. Different Payment Options is available(COD & Payu)
+
+
+/* FUTURE UPDATES */
+1. Multi-vendor integration
+2. Shipping API integration
