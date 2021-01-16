@@ -1,6 +1,6 @@
 # ayurmed
 
-A complete respongive Bootstrap E-commerce website for Ayurvedic Medicines(Single Vendor).
+A complete responsive Bootstrap E-commerce website for Ayurvedic Medicines(Single Vendor).
 The project is divided into two parts:-
 1. ADMIN SECTION
 2. USER'S SECTION
